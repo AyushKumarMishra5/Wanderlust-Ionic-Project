@@ -1,0 +1,39 @@
+.payment-success-content {
+    background-color: #ffffff;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .success-container {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  .success-icon {
+    font-size: 4rem;
+    color: #ff69b4; /* Pink color for icon */
+    margin-bottom: 1rem;
+  }
+  
+  .success-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff; /* Dark color for title text */
+    margin-bottom: 0.5rem;
+  }
+  
+  .success-message {
+    font-size: 1.2rem;
+    color: #ffffff; /* Grey color for message text */
+    margin-bottom: 1.5rem;
+  }
+  
+  .pink-button {
+    --background: #ff69b4; /* Pink background for button */
+    --color: #ffffff;      /* White text on button */
+    border-radius: 8px;
+  }

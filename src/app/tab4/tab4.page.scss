@@ -1,0 +1,89 @@
+ion-content{
+    --background: linear-gradient(260deg, rgb(249, 249, 249), rgb(238, 225, 225));
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px 5px;
+    filter: drop-shadow(1px 1px 4px grey);
+    margin: 40px;
+}
+
+.trans, .trip, .weat, .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.trans:hover, .trip:hover, .weat:hover, .cont:hover{
+    border: 1px solid black;
+    height: 45px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px gray;
+
+}
+
+
+.trans li, .trip li, .weat li, .cont li{
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.trans i:nth-child(odd), .trip i:nth-child(odd), .cont i:nth-child(odd){
+    margin-left: 10px;
+}
+
+.weat i:nth-child(odd){
+    margin-left: 5px;
+}
+
+.trans i:nth-child(odd), .trip i:nth-child(odd), .weat i:nth-child(odd), .cont i:nth-child(odd){
+    margin-right: 20px;
+}
+
+.trans li{
+    margin-left: -140px;
+}
+
+.trip li{
+    margin-left: -120px;
+}
+
+.weat li{
+    margin-left: -114px;
+}
+
+.cont li{
+    margin-left: -184px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer li i{
+    width: 20px;
+    height: 20px;
+}
+
+.footer li i:hover{
+    color: black;
+    box-shadow: 1px 1px 4px lightgray;
+}

@@ -1,0 +1,185 @@
+/* Page background */
+ion-content {
+    --background: linear-gradient(to bottom right, #e2ae4d, #a5a5d3);
+  }
+  
+  /* Toolbar background */
+  ion-toolbar {
+    --background: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Scroll container */
+  .custom-scroll {
+    height: 100%;
+    overflow-y: auto;
+    padding: 15px;
+  }
+  
+  /* Stay list card */
+  .stay-list ion-card {
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px 10px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .stay-list ion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Stay list card image */
+  .stay-list ion-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  /* Card header */
+  .stay-list ion-card-header {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Card subtitle for price */
+  .stay-list ion-card-subtitle {
+    font-size: 1rem;
+    color: #ff5a5f;
+    font-weight: bold;
+  }
+  
+  /* Stars and rating section */
+  .stay-list ion-card-content {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Suggestion section */
+  .suggestion-section {
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  
+  .suggestion-section h2 {
+    padding-left: 15px;
+    color: #333;
+  }
+  
+  /* Activity card */
+  ion-grid ion-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  ion-grid ion-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Activity card image */
+  ion-grid ion-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .suggestion-section {
+    margin-top: 20px;
+  }
+  
+  .suggestion-section h2 {
+    color: #1c5be2;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  ion-grid ion-col {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .activity-card {
+    width: 90%; /* Adjust to make sure cards don't get too large */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .activity-card img {
+    width: 100%;
+    height: 150px; /* Adjust this to control image height */
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .activity-card ion-card-content {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .activity-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-inner img {
+    border-radius: 10px; /* Rounds the image edges */
+    object-fit: cover;   /* Ensures the image fills the entire item space */
+    height: 400px;       /* Adjust height to fit your layout */
+  }
+  
+  .carousel-indicators li {
+    background-color: #333;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); /* Makes control icons visible on dark or colorful images */
+  }
+  
+  
+  /* Ensure that buttons are aligned properly */
+  ion-buttons {
+    --ion-margin-start: 10px;
+    --ion-margin-end: 10px;
+  }
+  
+  ion-button {
+    --border-radius: 50%;
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+  
+  ion-icon {
+    font-size: 24px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

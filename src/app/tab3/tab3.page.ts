@@ -9,4 +9,8 @@ export class Tab3Page {
 
   constructor() {}
 
+  onPayNow() {
+    console.log("Payment process initiated.");
+  }
+
 }

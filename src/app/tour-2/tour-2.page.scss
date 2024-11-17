@@ -1,0 +1,18 @@
+ion-content{
+    --background: linear-gradient(260deg, rgb(249, 249, 249), rgb(238, 225, 225));
+}
+
+.cnf{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cnf button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+
+}

@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Hotel Booking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <form [formGroup]="bookingForm" (ngSubmit)="submitBooking()">
+    <ion-list>
+      <!-- Full Name Field -->
+      <ion-item>
+        <ion-label position="floating">Full Name</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-note *ngIf="bookingForm.get('name')?.invalid && bookingForm.get('name')?.touched" color="danger">
+        Name is required
+      </ion-note>
+
+      <!-- Email Field -->
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-note *ngIf="bookingForm.get('email')?.invalid && bookingForm.get('email')?.touched" color="danger">
+        Valid email is required
+      </ion-note>
+
+      <!-- Phone Number Field -->
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input type="tel" formControlName="phone"></ion-input>
+      </ion-item>
+      <ion-note *ngIf="bookingForm.get('phone')?.invalid && bookingForm.get('phone')?.touched" color="danger">
+        Phone number is required
+      </ion-note>
+
+      <!-- Number of Guests Field -->
+      <ion-item>
+        <ion-label position="floating">Number of Guests</ion-label>
+        <ion-input type="number" formControlName="guests"></ion-input>
+      </ion-item>
+      <ion-note *ngIf="bookingForm.get('guests')?.invalid && bookingForm.get('guests')?.touched" color="danger">
+        Number of guests is required
+      </ion-note>
+
+      <!-- Check-in Date Field -->
+      <ion-item>
+        <ion-label position="floating">Check-in Date</ion-label>
+        <ion-datetime formControlName="checkinDate" displayFormat="MMM DD, YYYY" [min]="today"></ion-datetime>
+      </ion-item>
+
+      <!-- Check-out Date Field -->
+      <ion-item>
+        <ion-label position="floating">Check-out Date</ion-label>
+        <ion-datetime formControlName="checkoutDate" displayFormat="MMM DD, YYYY" [min]="today"></ion-datetime>
+      </ion-item>
+
+      <ion-note *ngIf="bookingForm.get('checkoutDate')?.invalid && bookingForm.get('checkoutDate')?.touched"
+        color="danger">
+        Check-out date is required
+      </ion-note>
+    </ion-list>
+
+    <!-- Submit Button -->
+    <ion-button type="submit" expand="block" [disabled]="bookingForm.invalid">
+      Book
+    </ion-button>
+  </form>
+</ion-content>

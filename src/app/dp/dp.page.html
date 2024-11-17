@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        Back
+      </ion-button>
+      <!-- <ion-button (click)="goForward()">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+        Forward
+      </ion-button> -->
+    </ion-buttons>
+    <!-- <ion-title ><h1 class="h1">3D Tour</h1></ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [style.background-color]="'#b9c1cd'">
+  <h1 class="h1">3D Tour</h1>
+  <div class="container">
+    <span *ngFor="let image of images; let i = index" [style.--i]="i + 1">
+      <img [src]="image" alt="Image {{ i + 1 }}" />
+    </span>
+  </div>
+</ion-content>

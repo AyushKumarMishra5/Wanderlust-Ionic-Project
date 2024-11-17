@@ -1,0 +1,19 @@
+<ion-buttons slot="start">
+  <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+</ion-buttons>
+
+<ion-content [fullscreen]="true" class="qr-payment-page">
+  <div class="content">
+    <h1>Scan to Pay</h1>
+    <div class="qr-code">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="QR Code">
+    </div>
+    <div class="timer">
+      <p>Time remaining: <span>{{ minutes }}:{{ seconds | number: '2.0' }}</span></p>
+    </div>
+    <p>Complete your payment in the given time.</p>
+    <ion-button expand="block" color="pink-button" routerLink="succ">
+      See Your Status
+    </ion-button>
+  </div>
+</ion-content>

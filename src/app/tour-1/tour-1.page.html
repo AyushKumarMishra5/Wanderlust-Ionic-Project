@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="header">
+    <i class="fa-solid fa-arrow-left fa-2xl" style="color: #18181B;" href="/tour"></i>
+    <h2>Book your Ticket</h2>
+  </div>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form">
+        <br>
+        <br>
+        <input type="text" placeholder="Username" [(ngModel)]="username" name="username" required maxlength="20" minlength="5">
+        <br>
+        <input type="date" placeholder="From..." [(ngModel)]="from" name="date" required minlength="8" maxlength="15">
+        <br>
+        <input type="date" placeholder="To..." [(ngModel)]="to" name="to" required minlength="8" maxlength="15">
+        <br>
+        <input type="number" placeholder="Contact No." [(ngModel)]="phone" name="phone" required minlength="10" maxlength="10">
+        <br>
+        <input type="email" placeholder="Email ID" [(ngModel)]="mail" name="mail" required minlength="10" maxlength="30">
+        <br>
+        <input type="text" name="code" id="" placeholder="Refrell Code">
+        <br>
+        <br>
+        <button type="submit">Book Now</button>
+    </div>
+</form>
+</ion-content>

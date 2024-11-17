@@ -1,0 +1,123 @@
+<!-- <ion-header>
+  <ion-toolbar color="white">
+    <ion-searchbar
+      [animated]="true"
+      debounce="800"
+      #searchInput
+      placeholder="Search for hotels..."
+      (ionChange)="onSearchChange($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-header>
+  <ion-toolbar color="white">
+
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+
+    <ion-searchbar
+      [animated]="true"
+      debounce="800"
+      #searchInput
+      placeholder="Search for hotels..."
+      (ionChange)="onSearchChange($event)">
+    </ion-searchbar>
+
+
+    <ion-buttons slot="end">
+      <ion-button (click)="goNext()">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="custom-scroll">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExample" data-slide-to="1"></li>
+        <li data-target="#carouselExample" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/c-1.jpg" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/c-2.jpg" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/c-3.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/c-4.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/c-5.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/c-6.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/c-7.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+      </div>
+
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+    <div class="stay-list">
+      <ion-card *ngFor="let stay of stays" (click)="goToBookPage(stay)">
+        <img [src]="stay.image" alt="Stay Image"/>
+        <ion-card-header>
+          <ion-card-title>{{ stay.title }}</ion-card-title>
+          <ion-card-subtitle>₹{{ stay.price }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Display stars based on rating -->
+          <ng-container *ngFor="let star of getStarArray(stay.rating)">
+            <ion-icon [name]="star" color="warning"></ion-icon>
+          </ng-container>
+          {{ stay.rating }} ({{ stay.reviews }})
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+
+    <!-- Try Something Different Section -->
+    <div class="suggestion-section">
+      <h2>Try Something Different</h2>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" *ngFor="let activity of activities">
+            <ion-card class="activity-card">
+              <img [src]="activity.image" alt="Activity Image" />
+              <ion-card-content>{{ activity.name }}</ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

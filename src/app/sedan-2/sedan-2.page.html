@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="pink">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Book Your Ride</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding white-background">
+  <div class="custom-scroll">
+  <ion-card class="booking-card">
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-label position="stacked">Pickup Location</ion-label>
+        <ion-input [(ngModel)]="pickupLocation" placeholder="Enter starting point" required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="stacked">Drop Location</ion-label>
+        <ion-input [(ngModel)]="dropLocation" placeholder="Enter destination" required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="stacked">Travel Time</ion-label>
+        <ion-datetime
+          display-format="DD MMM YYYY, HH:mm"
+          [(ngModel)]="travelTime"
+          placeholder="Select date and time"
+          required
+        ></ion-datetime>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="stacked">Distance</ion-label>
+        <ion-input [(ngModel)]="distance" placeholder="Enter distance in km" type="number"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="stacked">Price</ion-label>
+        <ion-input [(ngModel)]="price" placeholder="Calculated Price" readonly></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-footer class="footer">
+    <ion-button expand="block" class="pink-button" routerLink="tab3">
+      Continue
+    </ion-button>
+  </ion-footer>
+  </div>
+</ion-content>

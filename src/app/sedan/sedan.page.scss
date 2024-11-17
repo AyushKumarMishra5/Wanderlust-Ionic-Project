@@ -1,0 +1,134 @@
+/* Page Heading */
+.custom-scroll{
+  height: 100%;
+  overflow-y: auto;
+}
+.car-booking-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff69b4; /* Pink color */
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  background-color: white; /* White background for search bar */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.search-bar ion-searchbar{
+  font-size: 22px;
+  color: black;
+  --background: white;
+  border: none;
+  outline: none;
+}
+
+/* Car Collection Container */
+.car-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px;
+  background-color: #f9f9f9; /* Light background */
+  gap: 16px;
+}
+
+/* Car Card Styling */
+.car-card {
+  width: 300px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white; /* White background */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slight scale-up on hover */
+}
+
+/* Car Card Content */
+.car-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  align-items: center;
+}
+
+/* Car Image */
+.car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Car Details */
+.car-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.car-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.car-price {
+  font-size: 18px;
+  color: #ff69b4; /* Pink color */
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.car-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.car-rating ion-icon {
+  color: yellow; /* Set star color to yellow */
+  font-size: 18px;
+}
+
+.rating-text {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #777;
+}
+
+.car-description {
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* 'Book Now' Button */
+.book-now-btn {
+  width: 100%;
+  background-color: #ff69b4; /* Pink color */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.book-now-btn:hover {
+  background-color: #e55b94;
+}

@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: Tab3Page,
+  },
+  {
+    path: 'qr-payment',
+    loadChildren: () => import('../qr-payment/qr-payment.module').then( m => m.QrPaymentPageModule)
   }
 ];
 

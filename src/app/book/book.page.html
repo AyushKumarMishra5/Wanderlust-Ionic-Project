@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>The Ritz-Carlton, New York Park</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="custom-scroll">
+  <!-- Image Section -->
+  <div class="image-section">
+    <img src="assets/images/card-1.jpg" alt=" Apartment" />
+    <ion-chip class="chip-3d-tour" (click)="navigateToDpPage()">
+      <ion-icon name="videocam-outline"></ion-icon>
+      <ion-label>3D Tour</ion-label>
+    </ion-chip>
+
+  </div>
+
+  <!-- Title Section -->
+  <div class="title-section">
+    <h2>The Ritz-Carlton, New York Park</h2>
+    <p>Sogndal, Vestland, Norway</p>
+    <div class="rating">
+      <ion-icon name="star" class="icon-star"></ion-icon>
+      <span>5.0 (42)</span>
+    </div>
+  </div>
+
+  <!-- Details Section -->
+  <div class="details-section">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3">
+          <ion-icon name="wifi-outline"></ion-icon>
+          <p>Wi-Fi</p>
+        </ion-col>
+        <ion-col size="3">
+          <ion-icon name="tv-outline"></ion-icon>
+          <p>TV</p>
+        </ion-col>
+        <ion-col size="3">
+          <ion-icon name="restaurant-outline"></ion-icon>
+          <p>Dinner</p>
+        </ion-col>
+        <ion-col size="3">
+          <ion-icon name="car-outline"></ion-icon>
+          <p>Parking</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- Description -->
+  <div class="description-section">
+    <p>Cozy cottages for two couples, located next to the lake. A small terrace offers an excellent view of the valley, which won't leave anyone indifferent.</p>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer-section">
+    <p class="price">₹8050/</p>
+    <ion-button expand="block" color="primary" (click)="navigateToBookingPage()">Book Now</ion-button>
+
+  </div>
+</div>
+</ion-content>

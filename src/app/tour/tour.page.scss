@@ -1,0 +1,138 @@
+ion-content{
+    --background: linear-gradient(260deg, rgb(249, 249, 249), rgb(238, 225, 225));
+}
+
+.custom-scroll{
+    height: 100%;
+    overflow-y: auto;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 45px;
+    box-shadow: 4px 4px 10px gray;
+    margin: 20px;
+}
+
+.search input{
+    width: 200px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+}
+
+.pic1{
+    margin-top: 10px;
+    width: 90%;
+    height: 200px;
+    margin-left: 20px;
+    border-radius: 25px;
+    background-image: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/03/600x400-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 4px 4px 8px lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pic1 h2, .pic2 h2, .pic3 h2, .pic4 h2, .pic5 h2, .pic6 h2{
+    color: black;
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -150px;
+}
+
+.pic1 h2:nth-child(odd), .pic2 h2:nth-child(odd), .pic3 h2:nth-child(odd), .pic4 h2:nth-child(odd), .pic5 h2:nth-child(odd), .pic6 h2:nth-child(odd){
+    margin-left: 10px;
+}
+
+.pic1 h2:nth-child(even), .pic2 h2:nth-child(even), .pic3 h2:nth-child(even), .pic4 h2:nth-child(even), .pic5 h2:nth-child(even), .pic6 h2:nth-child(even){
+    margin-right: 10px;
+}
+
+.pic2{
+    margin-top: 20px;
+    width: 90%;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px lightgray;
+    margin-left: 20px;
+    background-image: url(https://www.holidify.com/images/cmsuploads/compressed/beach-2309292_640_20181018230505_20181018230748.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pic3{
+    margin-top: 20px;
+    width: 90%;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px lightgray;
+    margin-left: 20px;
+    background-image: url(https://thumbs.dreamstime.com/b/picturesque-view-mountain-range-snow-capped-rocks-under-blue-sky-white-big-cloud-hanging-over-winter-season-331526207.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic4{
+    margin-top: 20px;
+    width: 90%;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px lightgray;
+    margin-left: 20px;
+    background-image: url(https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/best-places-to-visit-in-india.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic5{
+    margin-top: 20px;
+    width: 90%;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px lightgray;
+    margin-left: 20px;
+    background-image: url(https://lh3.googleusercontent.com/2qX-sLBPFhjyrnz_ZSqiIWRZDkRqT9MjyVlim_COZ2xO5yl1FtYxUvszT1vXv79mX8YspDI_zf4zWxQiVO7YykTNSlTzdX24uGMug2M);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic6{
+    margin-top: 20px;
+    width: 90%;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px lightgray;
+    margin-left: 20px;
+    background-image: url(https://www.transindiatravels.com/wp-content/uploads/the-taj-mahal-agra.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

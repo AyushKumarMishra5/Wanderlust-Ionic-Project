@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: Tab2Page,
-  }
+  },
+  {
+    path: 'flight',
+    loadChildren: () => import('../flight/flight.module').then( m => m.FlightPageModule)
+  },
 ];
 
 @NgModule({
